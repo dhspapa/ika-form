@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Καταχώρηση Έργου</title>
+</head>
+<body>
+    <h2>Καταχώρηση Έργου για Απογραφή ΙΚΑ</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Αποστολή</button>
+    </form>
+</body>
+</html>
